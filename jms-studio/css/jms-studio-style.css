@@ -1,0 +1,73 @@
+:root {
+    font-size: 16px;
+}
+
+.jms-studio-main-header-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    background-color: var(--wp--preset--color--page);
+}
+
+.jms-studio-main-header-content  {
+    max-width: var(--wp--style--global--content-size);
+    margin: 0 auto;
+}
+
+
+/* back to top button */
+.jms-studio-top-of-page {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    padding: 1%;
+    transition: background-color 0.3s;
+    border: none;
+    z-index: 999;
+    fill: var(--wp--preset--color--white);
+}
+
+
+@media screen and (min-width: 769px) {
+    .jms-studio-mobile-only {
+        display: none;
+    }
+    /* handles the wordpress navigation block */
+    .wp-block-navigation__submenu-container li > a, .wp-block-navigation-item li {
+        background-color: var(--wp--preset--color--button) !important;
+        color: var(--wp--preset--color--text) !important;
+    }
+
+    .wp-block-navigation__submenu-container li:hover > a, .wp-block-navigation-item li:hover {
+        background-color: var(--wp--preset--color--button-hover) !important;
+        color: var(--wp--preset--color--link-hover) !important;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+    .jms-studio-desktop-only {
+        display: none;
+    }
+    /* handles the mobile navigation menu nav elements */
+    .wp-block-navigation__responsive-container-content {
+        margin-left: 5%;
+    }
+    /*adds bold to the mobile navigation submenu nav elements*/
+    .wp-block-navigation__submenu-container {
+        font-weight: bold;
+    }
+    /* handles the mobile navigation X exit button */
+    .wp-block-navigation__responsive-container-close {
+        padding-top: 2vh;
+        padding-right: 5%
+    }
+    /* handles header mobile padding will need to be change if the page padding is */
+    .jms-studio-main-header-content  {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
