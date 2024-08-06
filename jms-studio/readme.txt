@@ -15,6 +15,9 @@ Theme developed by Will Duffy
 
 == Changelog ==
 
+= 1.0.1 =
+* Adjusted header and CSS to correct the issue with navigation submenus extending too far to the right and going off the screen.
+
 = 1.0.0 =
 * Initial release
 

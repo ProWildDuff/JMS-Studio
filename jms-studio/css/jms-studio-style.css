@@ -52,16 +52,25 @@
     .jms-studio-desktop-only {
         display: none;
     }
+	
+	.jms-studio-header-navigation  {
+		--navigation-layout-justification-setting: flex-start !important;
+		--navigation-layout-justify: flex-start !important;
+	}
+	.jms-studio-header-navigation .wp-block-navigation__responsive-dialog {
+		margin-top: 0 !important;
+	}
+	
     /* handles the mobile navigation menu nav elements */
-    .wp-block-navigation__responsive-container-content {
+    .jms-studio-header-navigation .wp-block-navigation__responsive-container-content {
         margin-left: 5%;
     }
     /*adds bold to the mobile navigation submenu nav elements*/
-    .wp-block-navigation__submenu-container {
+    .jms-studio-header-navigation .wp-block-navigation__submenu-container {
         font-weight: bold;
     }
     /* handles the mobile navigation X exit button */
-    .wp-block-navigation__responsive-container-close {
+    .jms-studio-header-navigation .wp-block-navigation__responsive-container-close {
         padding-top: 2vh;
         padding-right: 5%
     }
