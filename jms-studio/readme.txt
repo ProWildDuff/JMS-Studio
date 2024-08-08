@@ -17,6 +17,7 @@ Theme developed by Will Duffy
 
 = 1.0.1 =
 * Adjusted header and CSS to correct the issue with navigation submenus extending too far to the right and going off the screen.
+* Updated the CSS class name and title for SVG file.
 
 = 1.0.0 =
 * Initial release
